@@ -9,4 +9,4 @@ namespace SmartTrip.Web.Controllers
             return View();
         }
     }
-}
+} 
