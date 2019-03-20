@@ -6,8 +6,7 @@ namespace SmartTrip.DAL.EF
 {
     public class ApplicationContext : DbContext
     {
-        public ApplicationContext(DbContextOptions options)
-            : base(options)
+        public ApplicationContext()
         {
 
         }

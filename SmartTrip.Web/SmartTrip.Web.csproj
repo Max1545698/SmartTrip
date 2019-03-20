@@ -2,17 +2,23 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>7.1</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\API\" />
     <Folder Include="Models\ViewModels\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="EasyNetQ" Version="3.4.4" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Message\Message.csproj" />
+    <ProjectReference Include="..\SmartTrip.DAL\SmartTrip.DAL.csproj" />
   </ItemGroup>
 
 </Project>

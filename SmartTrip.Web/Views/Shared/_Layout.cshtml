@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/search.css" />
+    <link rel="stylesheet" href="~/css/search.css" />    
+    
 </head>
 <body>
     <!-- MAIN MENU-->
@@ -15,9 +16,11 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
-
     <div>
         @RenderBody()
     </div>
+
+    <!--JS links-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
 </body>
 </html>
